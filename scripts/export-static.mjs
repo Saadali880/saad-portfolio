@@ -18,7 +18,7 @@ const css = await cssResponse.text();
 html = html
   .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
   .replace(/<link\b[^>]*rel=["'](?:modulepreload|preload)["'][^>]*>/gi, "")
-  .replace(/<link\b[^>]*href=["']\/app\/globals\.css["'][^>]*>/i, '<link rel="stylesheet" href="/styles.css">');
+  .replace(/<link\b[^>]*href=["']\/app\/globals\.css["'][^>]*>/i, `<style>${css}</style>`);
 
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
