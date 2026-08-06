@@ -56,17 +56,23 @@ const projects = [
 ];
 
 const skills = [
-  { group: "Languages", items: ["Python", "C++", "SQL", "JavaScript"] },
-  { group: "AI / ML", items: ["scikit-learn", "Pandas", "NumPy", "KNN", "Naive Bayes", "K-Means", "Regression"] },
-  { group: "Engineering", items: ["OOP", "Data Structures", "Algorithms", "DBMS", "Git", "Software Testing"] },
-  { group: "Tools", items: ["Jupyter", "VS Code", "SQL Server", "GitHub", "React Native"] },
+  { group: "Languages", items: ["Python", "C++", "SQL"] },
+  { group: "AI / Machine Learning", items: ["Artificial Intelligence", "Machine Learning", "Prompt Engineering", "Data Analysis", "scikit-learn", "Pandas", "NumPy", "KNN", "Naive Bayes", "K-Means", "Regression"] },
+  { group: "Computer Science", items: ["Data Structures & Algorithms", "Object-Oriented Programming", "Databases", "DBMS", "Problem Solving", "Computer Networks", "Operating Systems"] },
+  { group: "Tools & Platforms", items: ["React Native", "Claude Code", "Git", "GitHub", "Jupyter Notebook", "VS Code", "SQL Server", "Microsoft Excel", "Microsoft Word", "Microsoft PowerPoint"] },
 ];
 
 const credentials = [
-  { year: "2026", title: "Machine Learning with Python", issuer: "IBM · Coursera", mark: "ML" },
-  { year: "11", title: "Verified Learning Credentials", issuer: "Full collection on LinkedIn", mark: "✓" },
-  { year: "AI", title: "Applied AI & GenAI Learning", issuer: "Practical labs and coursework", mark: "AI" },
-  { year: "CS", title: "Computer Science Foundations", issuer: "Algorithms, databases and software", mark: "01" },
+  { title: "Foundations of AI and Machine Learning", issuer: "Microsoft", issued: "Aug 2026", credential: "7OS9EVHCUOBH", image: "/cert-foundations-ai-ml.jpg", href: "https://coursera.org/verify/7OS9EVHCUOBH" },
+  { title: "Foundations of Machine Learning", issuer: "Coursera", issued: "Aug 2026", credential: "ZGKLRTOVNEXS", image: "/cert-foundations-ml.jpg", href: "https://coursera.org/verify/ZGKLRTOVNEXS" },
+  { title: "Machine Learning with Python", issuer: "IBM", issued: "Aug 2026", credential: "PI30QJTECX6MW", image: "/cert-ml-python.jpg", href: "https://coursera.org/verify/PI30QJTECX6MW" },
+  { title: "Exploratory Data Analysis for Machine Learning", issuer: "IBM", issued: "Aug 2026", credential: "43KGSAIKU2WW", image: "/cert-eda-ml.jpg", href: "https://coursera.org/verify/43KGSAIKU2WW" },
+  { title: "Python 101 for Data Science", issuer: "IBM", issued: "Apr 2026", credential: "7f3c28efb7084f49acf4a89db6ddff73", image: "/cert-python-101.jpg", href: "https://courses.cognitiveclass.ai/certificates/7f3c28efb7084f49acf4a89db6ddff73" },
+  { title: "Introduction to Agent Skills", issuer: "Anthropic", issued: "Aug 2026", credential: "LinkedIn verified", image: "/cert-agent-skills.jpg", href: "https://www.linkedin.com/in/saad-ali-3007a1333/details/certifications/" },
+  { title: "Introduction to Subagents", issuer: "Anthropic", issued: "Aug 2026", credential: "LinkedIn verified", image: "/cert-subagents.jpg", href: "https://www.linkedin.com/in/saad-ali-3007a1333/details/certifications/" },
+  { title: "Claude Platform 101", issuer: "Anthropic", issued: "Aug 2026", credential: "LinkedIn verified", image: "/cert-claude-platform.jpg", href: "https://www.linkedin.com/in/saad-ali-3007a1333/details/certifications/" },
+  { title: "Claude Code 101", issuer: "Anthropic", issued: "Aug 2026", credential: "LinkedIn verified", image: "/cert-claude-code-101.jpg", href: "https://www.linkedin.com/in/saad-ali-3007a1333/details/certifications/" },
+  { title: "Claude Code in Action", issuer: "Anthropic", issued: "Aug 2026", credential: "LinkedIn verified", image: "/cert-claude-code-action.jpg", href: "https://www.linkedin.com/in/saad-ali-3007a1333/details/certifications/" },
 ];
 
 function Arrow() {
@@ -86,7 +92,7 @@ export default function Home() {
           <span className="brand-chip">⌘</span><strong>Saad Ali</strong><em>Portfolio</em>
         </a>
         <nav aria-label="Primary navigation">
-          <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a>
+          <a href="#about">About</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a>
           <a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a>
         </nav>
         <a className="header-cta" href="mailto:saadali45.official@gmail.com">Get in Touch</a>
@@ -112,7 +118,7 @@ export default function Home() {
 
         <div className="metric-grid" aria-label="Career highlights">
           <article><strong>06+</strong><span>Featured Projects</span><small>AI · DATA · ALGORITHMS</small></article>
-          <article><strong>11</strong><span>Credentials</span><small>VERIFIED LEARNING</small></article>
+          <article><strong>10</strong><span>Credentials</span><small>LINKEDIN VERIFIED</small></article>
           <article><strong>01</strong><span>Active Internship</span><small>APPLIED MACHINE LEARNING</small></article>
           <article><strong>03+</strong><span>Core Domains</span><small>AI · SOFTWARE · DATA</small></article>
         </div>
@@ -138,19 +144,32 @@ export default function Home() {
 
       <section className="section shell" id="experience">
         <div className="section-heading split">
-          <div><p>02 / EXPERIENCE & EDUCATION</p><h2>Learning with <span>momentum.</span></h2></div>
-          <p className="section-note">A foundation in computer science, strengthened by practical project work and applied AI experience.</p>
+          <div><p>02 / EXPERIENCE</p><h2>Applied learning at <span>FlyRank.</span></h2></div>
+          <p className="section-note">Turning machine-learning concepts into practical notebooks, experiments and AI workflows in a professional environment.</p>
         </div>
-        <div className="timeline">
-          <article><div className="date">2026 — Present</div><i /><div><small>EXPERIENCE</small><h3>Machine Learning Intern</h3><h4>FlyRank · Remote</h4><p>Developing practical ML workflows, notebooks and experiments while expanding into generative AI and production-oriented problem solving.</p></div></article>
-          <article><div className="date">Nov 2023 — Present</div><i /><div><small>EDUCATION</small><h3>Bachelor of Science in Computer Science</h3><h4>Lahore Garrison University</h4><p>Coursework spanning algorithms, databases, computer networks, operating systems, image processing, software testing and applied machine learning.</p></div></article>
-          <article><div className="date">Nov 2021 — Jul 2023</div><i /><div><small>EDUCATION</small><h3>Intermediate in Computer Science</h3><h4>Punjab Group of Colleges</h4><p>Built the mathematical and programming foundation for undergraduate computer science.</p></div></article>
+        <div className="experience-card">
+          <div className="experience-date">2026 — Present</div>
+          <div className="company-mark">FR</div>
+          <div className="experience-copy"><small>MACHINE LEARNING INTERNSHIP</small><h3>Machine Learning Intern</h3><h4>FlyRank AI · Remote</h4><p>Developing practical machine-learning workflows, exploratory notebooks and model experiments while building skills in prompt engineering, Claude Code and agentic AI systems.</p><div><span>Machine Learning</span><span>Python</span><span>Data Analysis</span><span>Prompt Engineering</span><span>AI Agents</span></div></div>
+        </div>
+      </section>
+
+      <section className="section education-section" id="education">
+        <div className="shell">
+          <div className="section-heading split">
+            <div><p>03 / EDUCATION</p><h2>Strong foundations.<br /><span>Continuous growth.</span></h2></div>
+            <p className="section-note">Formal computer-science education supported by focused, hands-on technical learning.</p>
+          </div>
+          <div className="education-grid">
+            <article><div className="education-year">2023 — PRESENT</div><div className="education-icon">LGU</div><div><small>BACHELOR&apos;S DEGREE</small><h3>BS Computer Science</h3><h4>Lahore Garrison University</h4><p>Algorithms, databases, computer networks, operating systems, digital image processing and applied machine learning.</p></div></article>
+            <article><div className="education-year">2021 — 2023</div><div className="education-icon">PGC</div><div><small>INTERMEDIATE</small><h3>Intermediate in Computer Science</h3><h4>Punjab Group of Colleges</h4><p>Programming, mathematics and foundational computing concepts.</p></div></article>
+          </div>
         </div>
       </section>
 
       <section className="section skills-section" id="skills">
         <div className="shell">
-          <div className="section-heading"><p>03 / CAPABILITIES</p><h2>A modern toolkit for<br /><span>real-world problems.</span></h2></div>
+          <div className="section-heading"><p>04 / CAPABILITIES</p><h2>Verified skills for<br /><span>real-world problems.</span></h2></div>
           <div className="skills-grid">
             {skills.map((skill, index) => (
               <article key={skill.group}><div className="skill-index">0{index + 1}</div><h3>{skill.group}</h3><div>{skill.items.map(item => <span key={item}>{item}</span>)}</div></article>
@@ -161,7 +180,7 @@ export default function Home() {
 
       <section className="section shell" id="projects">
         <div className="section-heading split">
-          <div><p>04 / SELECTED PROJECTS</p><h2>Proof over <span>promises.</span></h2></div>
+          <div><p>05 / SELECTED PROJECTS</p><h2>Proof over <span>promises.</span></h2></div>
           <p className="section-note">Six projects that show how I reason, build and learn—from messy data to clean systems.</p>
         </div>
         <div className="project-grid">
@@ -179,18 +198,24 @@ export default function Home() {
       <section className="section certificate-section" id="certificates">
         <div className="shell">
           <div className="section-heading split">
-            <div><p>05 / CERTIFICATES</p><h2>Credentials that back<br /><span>the learning.</span></h2></div>
+            <div><p>06 / LICENSES & CERTIFICATES</p><h2>Verified credentials.<br /><span>Visible progress.</span></h2></div>
             <a className="text-link" href="https://www.linkedin.com/in/saad-ali-3007a1333/details/certifications/" target="_blank" rel="noreferrer">View verified credentials <Arrow /></a>
           </div>
           <div className="credential-grid">
-            {credentials.map(item => <article key={item.title}><div className="credential-mark">{item.mark}</div><div><small>{item.year}</small><h3>{item.title}</h3><p>{item.issuer}</p></div><span>✓</span></article>)}
+            {credentials.map(item => (
+              <a className="credential-card" key={item.title} href={item.href} target="_blank" rel="noreferrer">
+                <div className="certificate-image"><img src={item.image} alt={`${item.title} certificate thumbnail`} /></div>
+                <div className="certificate-copy"><small>{item.issued}</small><h3>{item.title}</h3><p>{item.issuer}</p><span>Credential: {item.credential}</span></div>
+                <div className="verified-mark">✓<em>VERIFIED</em></div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
 
       <section className="contact-section" id="contact">
         <div className="shell contact-inner">
-          <p>06 / LET&apos;S CONNECT</p>
+          <p>07 / LET&apos;S CONNECT</p>
           <h2>Have an internship, project<br />or interesting problem?</h2>
           <p className="contact-copy">I&apos;m ready to contribute, learn fast and build something useful with a strong engineering team.</p>
           <a className="contact-email" href="mailto:saadali45.official@gmail.com">saadali45.official@gmail.com <Arrow /></a>
