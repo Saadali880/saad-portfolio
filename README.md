@@ -21,6 +21,6 @@ The main source lives in `app/`. The `static-site/` directory is the production-
 
 ## Links
 
-- [Portfolio](https://saad-portfolio.vercel.app)
+- [Portfolio](https://saadali-portfolio.vercel.app)
 - [GitHub](https://github.com/Saadali880)
 - [LinkedIn](https://www.linkedin.com/in/saad-ali-3007a1333)
