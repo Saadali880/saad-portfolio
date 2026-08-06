@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://saad-portfolio.vercel.app"),
-  title: "Saad Ali — AI/ML Engineer & Software Builder",
+  metadataBase: new URL("https://saad-portfolio-wheat.vercel.app"),
+  title: "Saad Ali — AI/ML & Software Portfolio",
   description:
     "Portfolio of Saad Ali, a computer science student and machine learning intern building practical AI, mobile, data and algorithmic systems.",
   keywords: [
     "Saad Ali",
-    "Machine Learning Engineer",
+    "AI ML Engineer",
     "Computer Science",
     "Python Developer",
     "C++ Developer",
@@ -16,18 +16,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Saad Ali", url: "https://github.com/Saadali880" }],
   openGraph: {
-    title: "Saad Ali — AI/ML Engineer & Software Builder",
-    description: "Curiosity turned into working systems across AI, data, mobile and algorithms.",
-    url: "https://saad-portfolio.vercel.app",
+    title: "Saad Ali — AI/ML & Software Portfolio",
+    description: "Machine learning, data and software projects by Saad Ali, a final-year Computer Science student in Lahore.",
+    url: "https://saad-portfolio-wheat.vercel.app",
     siteName: "Saad Ali Portfolio",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Saad Ali portfolio" }],
+    images: [{ url: "/og-v2.png", width: 1200, height: 630, alt: "Saad Ali — AI, ML, software and data portfolio" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Saad Ali — AI/ML Engineer & Software Builder",
-    description: "Curiosity turned into working systems.",
-    images: ["/og.png"],
+    title: "Saad Ali — AI/ML & Software Portfolio",
+    description: "Practical systems across machine learning, data and software.",
+    images: ["/og-v2.png"],
   },
 };
 
