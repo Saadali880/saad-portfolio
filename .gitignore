@@ -41,3 +41,4 @@ yarn-error.log*
 /.dev-stdout.log
 /.dev-stderr.log
 /.pnpm-store/
+/static-site/.vercel/
