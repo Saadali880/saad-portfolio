@@ -56,10 +56,10 @@ const projects = [
 ];
 
 const skills = [
-  { group: "Languages", items: ["Python", "C++", "SQL"] },
-  { group: "AI / Machine Learning", items: ["Artificial Intelligence", "Machine Learning", "Prompt Engineering", "Data Analysis", "scikit-learn", "Pandas", "NumPy", "KNN", "Naive Bayes", "K-Means", "Regression"] },
-  { group: "Computer Science", items: ["Data Structures & Algorithms", "Object-Oriented Programming", "Databases", "DBMS", "Problem Solving", "Computer Networks", "Operating Systems"] },
-  { group: "Tools & Platforms", items: ["React Native", "Claude Code", "Git", "GitHub", "Jupyter Notebook", "VS Code", "SQL Server", "Microsoft Excel", "Microsoft Word", "Microsoft PowerPoint"] },
+  { group: "Languages", items: ["Python (Programming Language)", "C++", "SQL"] },
+  { group: "AI / Machine Learning", items: ["Prompt Engineering", "Machine Learning", "Artificial Intelligence (AI)", "Data Analysis"] },
+  { group: "Computer Science", items: ["dsa", "Object-Oriented Programming (OOP)", "Databases", "Operating Systems", "Problem Solving"] },
+  { group: "Tools & Platforms", items: ["GitHub", "React Native", "Claude Code", "Git", "Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint"] },
 ];
 
 const credentials = [
@@ -73,6 +73,9 @@ const credentials = [
   { title: "Claude Platform 101", issuer: "Anthropic", issued: "Aug 2026", credential: "LinkedIn verified", image: "/cert-claude-platform.jpg", href: "https://www.linkedin.com/in/saad-ali-3007a1333/details/certifications/" },
   { title: "Claude Code 101", issuer: "Anthropic", issued: "Aug 2026", credential: "LinkedIn verified", image: "/cert-claude-code-101.jpg", href: "https://www.linkedin.com/in/saad-ali-3007a1333/details/certifications/" },
   { title: "Claude Code in Action", issuer: "Anthropic", issued: "Aug 2026", credential: "LinkedIn verified", image: "/cert-claude-code-action.jpg", href: "https://www.linkedin.com/in/saad-ali-3007a1333/details/certifications/" },
+  { title: "AI Fluency: Framework & Foundations", issuer: "Anthropic", issued: "Aug 2026", credential: "LinkedIn verified", image: "/cert-ai-fluency-framework.jpg", href: "https://www.linkedin.com/in/saad-ali-3007a1333/recent-activity/all/" },
+  { title: "AI Fluency for Students", issuer: "Anthropic", issued: "Aug 2026", credential: "LinkedIn verified", image: "/cert-ai-fluency-students.jpg", href: "https://www.linkedin.com/in/saad-ali-3007a1333/recent-activity/all/" },
+  { title: "Claude 101", issuer: "Anthropic", issued: "Aug 2026", credential: "LinkedIn verified", image: "/cert-claude-101.jpg", href: "https://www.linkedin.com/in/saad-ali-3007a1333/recent-activity/all/" },
 ];
 
 function Arrow() {
@@ -118,7 +121,7 @@ export default function Home() {
 
         <div className="metric-grid" aria-label="Career highlights">
           <article><strong>06+</strong><span>Featured Projects</span><small>AI · DATA · ALGORITHMS</small></article>
-          <article><strong>10</strong><span>Credentials</span><small>LINKEDIN VERIFIED</small></article>
+          <article><strong>13</strong><span>Credentials</span><small>LINKEDIN VERIFIED</small></article>
           <article><strong>01</strong><span>Active Internship</span><small>APPLIED MACHINE LEARNING</small></article>
           <article><strong>03+</strong><span>Core Domains</span><small>AI · SOFTWARE · DATA</small></article>
         </div>
@@ -143,9 +146,8 @@ export default function Home() {
       </section>
 
       <section className="section shell" id="experience">
-        <div className="section-heading split">
-          <div><p>02 / EXPERIENCE</p><h2>Applied learning at <span>FlyRank.</span></h2></div>
-          <p className="section-note">Turning machine-learning concepts into practical notebooks, experiments and AI workflows in a professional environment.</p>
+        <div className="section-heading">
+          <p>02 / EXPERIENCE</p><h2>Applied learning at <span>FlyRank.</span></h2>
         </div>
         <div className="experience-card">
           <div className="experience-date">2026 — Present</div>
@@ -156,9 +158,8 @@ export default function Home() {
 
       <section className="section education-section" id="education">
         <div className="shell">
-          <div className="section-heading split">
-            <div><p>03 / EDUCATION</p><h2>Strong foundations.<br /><span>Continuous growth.</span></h2></div>
-            <p className="section-note">Formal computer-science education supported by focused, hands-on technical learning.</p>
+          <div className="section-heading">
+            <p>03 / EDUCATION</p><h2>Strong foundations.<br /><span>Continuous growth.</span></h2>
           </div>
           <div className="education-grid">
             <article><div className="education-year">2023 — PRESENT</div><div className="education-icon">LGU</div><div><small>BACHELOR&apos;S DEGREE</small><h3>BS Computer Science</h3><h4>Lahore Garrison University</h4><p>Algorithms, databases, computer networks, operating systems, digital image processing and applied machine learning.</p></div></article>
@@ -179,9 +180,8 @@ export default function Home() {
       </section>
 
       <section className="section shell" id="projects">
-        <div className="section-heading split">
-          <div><p>05 / SELECTED PROJECTS</p><h2>Proof over <span>promises.</span></h2></div>
-          <p className="section-note">Six projects that show how I reason, build and learn—from messy data to clean systems.</p>
+        <div className="section-heading">
+          <p>05 / SELECTED PROJECTS</p><h2>Proof over <span>promises.</span></h2>
         </div>
         <div className="project-grid">
           {projects.map((project) => (
@@ -197,9 +197,8 @@ export default function Home() {
 
       <section className="section certificate-section" id="certificates">
         <div className="shell">
-          <div className="section-heading split">
-            <div><p>06 / LICENSES & CERTIFICATES</p><h2>Verified credentials.<br /><span>Visible progress.</span></h2></div>
-            <a className="text-link" href="https://www.linkedin.com/in/saad-ali-3007a1333/details/certifications/" target="_blank" rel="noreferrer">View verified credentials <Arrow /></a>
+          <div className="section-heading">
+            <p>06 / LICENSES & CERTIFICATES</p><h2>Verified credentials.<br /><span>Visible progress.</span></h2>
           </div>
           <div className="credential-grid">
             {credentials.map(item => (
@@ -210,6 +209,7 @@ export default function Home() {
               </a>
             ))}
           </div>
+          <a className="text-link" href="https://www.linkedin.com/in/saad-ali-3007a1333/details/certifications/" target="_blank" rel="noreferrer">View verified credentials <Arrow /></a>
         </div>
       </section>
 
