@@ -1,19 +1,18 @@
-import { mkdir, rm, writeFile, copyFile } from "node:fs/promises";
+import { mkdir, rm, writeFile, copyFile, readFile, readdir } from "node:fs/promises";
 
 const origin = process.env.PORTFOLIO_ORIGIN || "http://localhost:3000";
 const output = new URL("../static-site/", import.meta.url);
 
-const [pageResponse, cssResponse] = await Promise.all([
-  fetch(origin),
-  fetch(`${origin}/app/globals.css`),
-]);
+const pageResponse = await fetch(origin);
+const cssDirectory = new URL("../dist/client/_next/static/css/", import.meta.url);
+const cssFile = (await readdir(cssDirectory)).find((file) => file.endsWith(".css"));
 
-if (!pageResponse.ok || !cssResponse.ok) {
-  throw new Error(`Static export failed (${pageResponse.status}/${cssResponse.status})`);
+if (!pageResponse.ok || !cssFile) {
+  throw new Error(`Static export failed (${pageResponse.status})`);
 }
 
 let html = await pageResponse.text();
-const css = await cssResponse.text();
+const css = await readFile(new URL(cssFile, cssDirectory), "utf8");
 
 html = html
   .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
