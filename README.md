@@ -10,6 +10,18 @@ A recruiter-focused personal portfolio for Saad Ali, a final-year Computer Scien
 - Purpose-built Open Graph card for professional link sharing
 - Pre-exported static bundle for fast Vercel delivery
 
+## Technology
+
+- React 19
+- Vinext and Vite
+- Tailwind CSS
+- TypeScript
+- Static production bundle deployed on Vercel
+
+## Live website
+
+[saadali-portfolio.vercel.app](https://saadali-portfolio.vercel.app/)
+
 ## Local development
 
 ```bash
